@@ -1,0 +1,33 @@
+<div class="tableContainer">
+    <div class="tableMain">
+        <div class="tableHead">
+            <div class="tableCell">
+                <h3 class="tableColumnTitle">Nombre</h3>
+            </div>
+            <div class="tableCell">
+                <h3 class="tableColumnTitle">Precio</h3>
+            </div>
+            <div class="tableCell">
+                <h3 class="tableColumnTitle">Imagen</h3>
+            </div>
+        </div>
+        <div class="tableBody">
+            <% if (products.length===0) { %>
+                <p class="tableText">No hay productos para mostrar</p>
+            <% }else{ %>
+            <% for (let i=0; i < products.length; i++) { %>
+                <div class="tableRow">
+                    <div class="tableCell">
+                        <p class="tableText"><%=products[i].productName%></p>
+                    </div>
+                    <div class="tableCell">
+                        <p class="tableText">$<%=products[i].productPrice%></p>
+                    </div>
+                    <div class="tableCell">
+                        <img class="image" src="<%=products[i].productThumbnail%>" alt="<%=products[i].productName%>">
+                    </div>
+                </div>
+            <% } } %>
+        </div>
+    </div>
+</div>

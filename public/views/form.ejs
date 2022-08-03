@@ -1,0 +1,32 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="../style.css">
+        <title>EJS FORM</title>
+    </head>
+    <body class="bodyContainer">
+        <header class="headerContainer">
+            <h1 class="mainTitle">Formulario con EJS</h1>
+        </header>
+        <main class="mainContainer">
+            <h2 class="sectionTitle">Cargá tus productos:</h2>
+            <form class="formContainer" action="/form", method="post">
+                <label class="inputLabel" for="productName">Nombre</label>
+                <input class="input" placeholder="Nombre  del producto" type="text" name="productName">
+                <br>
+                <label class="inputLabel" for="productPrice">Precio</label>
+                <input class="input" placeholder="Precio  del producto" type="text" name="productPrice">
+                <br>
+                <label class="inputLabel" for="productThumbnail">Imagen</label>
+                <input class="input", placeholder="URL de la imagen del producto", type="text", name="productThumbnail">
+                <br>
+                <input class="button", type="submit", value="Cargar Producto">
+                <div>
+                    <button onclick="window.location.href='/productos'" class="button">Ver Productos</button>
+                </div>
+            </form>
+        </main>
+    </body>
+</html>

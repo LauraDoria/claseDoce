@@ -1,0 +1,23 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="../style.css">
+        <title>EJS Formulario de Carga de Productos</title>
+    </head>
+    <body class="bodyContainer">
+        <header class="headerContainer">
+            <h1 class="mainTitle">EJS Página de Producto</h1>
+        </header>
+        <main class="mainContainer">
+            <div>
+                <img src="<%=thumbnail%>" alt="<%=title%>">
+            </div>
+            <div>
+                <p><strong>Producto:</strong> <%=title%></p><br>
+                <p><strong>Precio:</strong> <%=price%></p><br>
+            </div>
+        </main>
+    </body>
+</html>
